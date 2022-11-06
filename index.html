@@ -1,68 +1,156 @@
+
 <!DOCTYPE html>
+<html lang="iw" dir="rtl">
 <html>
+
 <head>
+
+<body style="text-align: justify; margin:  auto;">
+
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+
 <style>
+
 .accordion {
+
   background-color: #eee;
-  color: #444;
+
+  color: #248;
+
   cursor: pointer;
-  padding: 18px;
+
+  padding: 15px;
+
   width: 100%;
+
   border: none;
-  text-align: left;
+
+  text-align: center;
+
   outline: none;
-  font-size: 15px;
+
+  font-size: 20px;
+
   transition: 0.4s;
+  
+  img-align: margin;
+
 }
+
+
 
 .active, .accordion:hover {
-  background-color: #ccc; 
+
+  background-color: #eee; 
+
 }
+
+
 
 .panel {
+
   padding: 0 18px;
+
   display: none;
+
   background-color: white;
+
   overflow: hidden;
+
+}
+
+
+body{
+  background:black;
+  overflow:hidden;
+  margin:0;
+}
+canvas{
+  background:#000;
 }
 </style>
+
 </head>
+
 <body>
 
-<h2>Accordion</h2>
 
-<button class="accordion">Section 1</button>
+
+
+
+
+<button class="accordion"><h2>תוספים</dr><br/><img src="https://raw.githubusercontent.com/yitzhakapps/yitzhakapps.github.io/main/ICON/AirPods.png"></button>
+
 <div class="panel">
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+  <img src="https://raw.githubusercontent.com/yitzhakapps/yitzhakapps.github.io/main/ICON/AirPods.png">
+
 </div>
 
-<button class="accordion">Section 2</button>
+
+
+<button class="accordion">מדריך 2</button>
+
 <div class="panel">
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+  <p>כאן ניתן לכתוב מה שרוצים דוגמה לבנית מדריך לגרסה עבור משה </p>
+
 </div>
 
-<button class="accordion">Section 3</button>
+
+
+<button class="accordion">מדריך 3</button>
+
 <div class="panel">
+
   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
 </div>
+
+
+
+
+
+
+
 
 <script>
+
 var acc = document.getElementsByClassName("accordion");
+
 var i;
 
+
+
 for (i = 0; i < acc.length; i++) {
+
   acc[i].addEventListener("click", function() {
+
     this.classList.toggle("active");
+
     var panel = this.nextElementSibling;
+
     if (panel.style.display === "block") {
+
       panel.style.display = "none";
+
     } else {
+
       panel.style.display = "block";
+
     }
+
   });
+
 }
+
 </script>
 
+
+
 </body>
+
 </html>
