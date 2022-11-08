@@ -1,75 +1,101 @@
+
 <!DOCTYPE html>
+<html lang="iw" dir="rtl">
 <html>
+
 <head>
-<link href='https://fonts.googleapis.com/css?family=Rubik&display=swap' rel='stylesheet'>
-<meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<body style="text-align: center; margin:  auto;">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<title>מדריך לשימוש במכשיר ובאפליקציות</title>
 
 <style>
-body {
-    font-family: 'Rubik';
-}
 
-.collapsible {
-  background-color: #777;
-  color: white;
+.accordion {
+
+  background-color: #eeb;
+  
+  color: #248v;
+
   cursor: pointer;
-  padding: 18px;
+
+  padding: 15px;
+
   width: 100%;
-  border: none;
-  text-align: right;
+  
+  border-radius:15px;
+
+  text-align: center;
+
   outline: none;
-  font-size: 15px;
+
+  font-size: 20px;
+
+  transition: 0.4s;
+  
+  img-align: center;
+  
+  video-align: center;
+
 }
 
-.active, .collapsible:hover {
-  background-color: #555;
+
+
+.active, .accordion:hover {
+
+  background-color: #eee; 
+  
+
 }
 
-.collapsible:after {
-  content: '\002B';
-  color: white;
-  font-weight: bold;
-  float: left;
-  margin-right: 5px;
-}
 
-.active:after {
-  content: "\2212";
-}
 
-.content {
+.panel {
+
   padding: 0 18px;
-  max-height: 0;
+
+  display: none;
+
+  background-color: white;
+
   overflow: hidden;
-  transition: max-height 0.2s ease-out;
-  background-color: #f1f1f1;
+
 }
 
 </style>
+
 </head>
-<body dir="rtl" align="center">
 
-<p>בס"ד</p>
-
-
-<h2>מדריך שימוש</h2>
-<p>הוראות מפורטות לשימוש במכשיר</p><br>
+<body>
 
 
-<button class="collapsible">הודעה חשובה</button>
+<div><p>בס"ד</p></div>
 
-<div class="content">
-<p>החל מיום שני כ"ה אדר ב' 28/03/2022 המספר פל' הנייד שלי הוחלף, ניתן ליצור קשר במס' החדש 05-56789-344 . </p>
+
+<center><h2>מדריך שימוש</h2></center>
+
+<center><h4>הוראות מפורטות לשימוש במכשיר</h4></center>
+
+<button class="accordion">הודעה חשובה</button>
+
+<div class="panel">
+
+  <p>החל מיום שני כ"ה אדר ב' 28/03/2022 המספר פל' הנייד שלי הוחלף, ניתן ליצור קשר במס' החדש 05-56789-344 . </p>
 <p>נא לא להתקשר למס' הקודם!</p>
 <p>נא לא להתקשר לפני השעה 12:00 בצהרים!</p>
 <p>נ.ב. אני משתדל לענות כשאני יכול במידה ואין מענה אשתדל בעז"ה לחזור אליכם.</p>
-
+  
 </div>
 
-<button class="collapsible">מידע כללי</button>
 
-<div class="content">
+
+<button class="accordion">מידע כללי</button>
+
+<div class="panel">
+
 <p>אפליקציית xDrip משמשת להצגת נתוני הסוכר
 ותומכת במשדרים של Dexcom מסוג G5/G6 , וב-
 Libre FreeStyle בתוספת מכשיר קטן המוצמד אל 
@@ -86,11 +112,15 @@ Libre FreeStyle בתוספת מכשיר קטן המוצמד אל
 <p>בעת חיבור משדר חדש או חיבור ראשון , חלונית 
 בקשת התאמה תוצג , יש לסמן ✓ בשאלה וללחוץ על 
 אישור.</p>
+
 </div>
 
-<button class="collapsible">תקלות נפוצות</button>
 
-<div class="content">
+
+<button class="accordion">תקלות נפוצות</button>
+
+<div class="panel">
+
 <p>לעיתים יתכן ניתוק הגורם להפסקת קבלת הנתונים מהמשדר, אפשר לנסות כמה דרכים:</p>
 <p>1. לכבות ולהדליק את ה-Bluetooth.</p>
 <p>2. להיכנס להגדרות המכשיר < אפליקציות והתראות 
@@ -99,11 +129,14 @@ Libre FreeStyle בתוספת מכשיר קטן המוצמד אל
 לחצו על אילוץ עצירה ואישור < כעת היכנסו 
 לאפליקציה כרגיל.</p>
 <p>3. בצעו כיבוי והפעלה למכשיר.</p>
+
 </div>
 
-<button class="collapsible">שגיאת ריילילינק</button>
 
-<div class="content">
+<button class="accordion">שגיאת ריילילינק</button>
+
+<div class="panel">
+
 <p>כשאפליקציית AndroidAPS
 מתריעה על משאבה אינה זמינה (מכיון שהריילילנק 
 לא מחובר) והריילילינק לא מתחבר אוטומטי יש לבצע 
@@ -122,11 +155,14 @@ Libre FreeStyle בתוספת מכשיר קטן המוצמד אל
 לחצו עליו והמתינו מס' שניות עד לחיבור חדש > עברו 
 ללשונית Omnipod באפליקציה ובסטטוס מצב 
 ריילילינק יהיה כתוב מחובר.</p>
+
 </div>
 
-<button class="collapsible">אפליקציית xDrip</button>
 
-<div class="content">
+<button class="accordion">אפליקיית xDrip</button>
+
+<div class="panel">
+
 <p>הפעלת סנסור בפעם הראשונה</p>
 
 <p> תמונה מס' 1 </p>
@@ -313,11 +349,13 @@ Libre FreeStyle בתוספת מכשיר קטן המוצמד אל
 <p> סוף מדריך xDrip </p>
 
 </div>
-  
-  
-<button class="collapsible">פתיחת חשבון בדקסקום</button>
 
-<div class="content">
+
+<button class="accordion">פתיחת חשבון בדקסקום</button>
+
+<div class="panel">
+
+
 <p> הכנסו לאפליקציית Dexcom G6 ופעלו ע"פ הסרטון והתמונות </p>
     
 <p>חלק 1</p>
@@ -373,12 +411,14 @@ Libre FreeStyle בתוספת מכשיר קטן המוצמד אל
 
     
 <p> זהו כעת יש לכם חשבון דקסקום  </p>
+
 </div>
-  
 
-<button class="collapsible">אפליקציית Dexcom G6</button>
 
-<div class="content">
+<button class="accordion">אפליקציית Dexcom G6</button>
+
+<div class="panel">
+
 <p> היתחברות בפעם הראשונה , והפעלת סנסור פעיל/חדש </p>
   
 
@@ -386,29 +426,38 @@ Libre FreeStyle בתוספת מכשיר קטן המוצמד אל
 
   
 <p> סוף מדריך Dexcom G6 </p>
+
 </div>
 
-<button class="collapsible">התראות דקסקום G6</button>
 
-<div class="content">
+<button class="accordion">התראות דקסקום G6 </button>
+
+<div class="panel">
+
 <p>הפעלת המסך באופן אוטומטי בעת התראה מאפליקציית דקסקום G6</p>
-<div class="embed-responsive embed-responsive-16by9"> <video class="embed-responsive-item" controls controlsList="nodownload" src="Notifications_G6.mp4" width="240" height="320"> </video> </div>
+<div class="embed-responsive embed-responsive-16by9"> <video class="embed-responsive-item" controls controlsList="nodownload" src="Notifications_G6.mp4" width="240" height="320"> </video></div><br>
+
 </div>
 
-<button class="collapsible">AndroidAPS</button>
-    
-<div class="content">
+
+<button class="accordion">Android APS</button>
+
+<div class="panel">
+
 <p>הפעלת משאבת האינסולין בפעם הראשונה</p>
 <p>דגם: Omnipod Dash</p>
 <div class="embed-responsive embed-responsive-16by9"> <video class="embed-responsive-item" controls controlsList="nodownload" src="APS.mp4" width="240" height="320"> </video> </div>
 <p>דגם: Omnipod Eros</p>
 <p>בעת בחירת סוג המשאבה יש לבחור בדגם Eros , וללחוץ על גלגל השינים , בדף שיפתח יש ללחוץ על סריקה ולהתחבר לריילינק, יש להמתין עד לחיבור הריילילנק למכשיר ואז יהיה ניתן ללחוץ על הבא, (ההמשך כמו בסרטון ההדרכה)</p>
 <p>הדרכה לפתיחת כתובת נייטסקאוט בל"נ יעלה בהמשך...</p>
+
 </div>
 
-<button class="collapsible">התקן שבת</button>
 
-<div class="content">
+<button class="accordion">התקן שבת</button>
+
+<div class="panel">
+
 <p>ההפעלת התקן שבת</p>
 <p>שימו לב! ההתקן שבת נועד אך ורק להקל מעלינו לחיצות מיותרות , בכל מקרה שיש צורך במתן טיפול מידי אין להמתין להתקן שבת.</p>
 <p>התקן שבת עם רטט</p>
@@ -418,11 +467,13 @@ Libre FreeStyle בתוספת מכשיר קטן המוצמד אל
 <p>א. לא לשכוח לפני שבת להסיר את נעילת המסך , יש להכנס להגדרות , אבטחה , נעילת מסך , ולבחור באפשרות של "ללא" , רק כך ההתקן שבת יוכל לפעול.</p>
 <p>ב. כדי להפעיל את ההתקן שבת יש להיכנס לתוך האפליקציה ולהפעיל את המתג בצד שמאל למעלה , במוצ"ש לא לשכוח לכבות את המתג הנ"ל כדי לצאת ממצב שבת.</p>
 <p>ג. מבדיקה שעשינו אם הסוללה מוטענת 100 % ומפעילים חיסכון בסוללה , ומפעילים מצב טיסה (רק לא לשכוח לאחר הפעלת מצב טיסה להפעיל את ה Bluetooth כדי שהכל יעבוד) ובנוסף לוודא שמנהל הסוללה כבוי (כל ההגדרות שקשורות לסוללה נמצאות בהגדרות המכשיר בלשונית סוללה) יוצא שכל המצבים הנ"ל שומרים על הסוללה לאורך שעות נוספות וכך אין צורך בהטענת המכשיר במהלך השבת.</p>
-</div>
-    
-<button class="collapsible">החלפה למקלדת מקשים</button>
 
-<div class="content">
+</div>
+
+
+<button class="accordion">החלפה למקלדת מקשים</button>
+
+<div class="panel">
 
 <p>בכדי להחליף למקלדת מקשים יש לבצע את הפעולות הבאות:</p>
 <p>1. הגדרות > מערכת > שפות וקלט > מקלדת שמופיעה במסך >  ניהול של מקלדות שמופיעות במסך > להפעיל את המקלדת מקשים.</p>
@@ -430,18 +481,23 @@ Libre FreeStyle בתוספת מכשיר קטן המוצמד אל
 <p>2. כשאתה נמצא בתיבת טקסט, למשל בהערות, אתה צריך להוריד את שורת ההתראות העליונה מלמעלה למטה, ואתה תראה אפשרות "בחר שיטת הזנה", צריך ללחוץ על זה ולשנות מהמקלדת הרגילה למקלדת מקשים.</p>
 
 <p>החלפת מצבים במקלדת נעשית על ידי מקש הסולמית, והחלפה בין אותיות קטנות באנגלית לגדולות נעשית על ידי מקש הכוכבית.</p>
+
 </div>
 
-<button class="collapsible">צילום מסך</button>
 
-<div class="content">
+<button class="accordion">צילום מסך</button>
+
+<div class="panel">
+
 <p>בכדי לשמור צילום מסך, יש ללחוץ בו זמנית על כפתור הניווט למטה + כפתור הניתוק למשך שנייה. </p>
+
 </div>
 
-    
-<button class="collapsible">משימות</button>
 
-<div class="content">
+<button class="accordion">משימות</button>
+
+<div class="panel">
+
 <p>משימה 1</p>
 <div class="embed-responsive embed-responsive-16by9"> <video class="embed-responsive-item" controls controlsList="nodownload" src="m-1.mp4" width="240" height="320"> </video> </div>.</p>
 <p>לקבלת המדריך לפתיחת כתובת Nightscout שלחו מייל לכתובת</p>
@@ -479,28 +535,55 @@ Libre FreeStyle בתוספת מכשיר קטן המוצמד אל
 <div class="embed-responsive embed-responsive-16by9"> <video class="embed-responsive-item" controls controlsList="nodownload" src="m-9.mp4" width="240" height="320"> </video> </div>.</p>
 
 <p>משימה 10</p>
-<div class="embed-responsive embed-responsive-16by9"> <video class="embed-responsive-item" controls controlsList="nodownload" src="m-10.mp4" width="240" height="320"> </video> </div>.</p>
+<div class="embed-responsive embed-responsive-16by9"> <video class="embed-responsive-item" controls controlsList="nodownload" src="https://github.com/SoceretVersionEditionForQlNF21PDevice/SoceretApIikaztiotUpdates/raw/main/Icons/GuideIcons/m-1.mp4" width="240" height="320"> </video> </div></p><hr>
 
-</div>
-    
+</div><br><i>
+
+<center><p><h3>Developers by Y.E & D.H ©</h3></p></center>
+
+
+
+
+
+
+
+
+
 
 <script>
-var coll = document.getElementsByClassName("collapsible");
+
+var acc = document.getElementsByClassName("accordion");
+
 var i;
 
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
+
+
+for (i = 0; i < acc.length; i++) {
+
+  acc[i].addEventListener("click", function() {
+
     this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.maxHeight){
-      content.style.maxHeight = null;
+
+    var panel = this.nextElementSibling;
+
+    if (panel.style.display === "block") {
+
+      panel.style.display = "none";
+
     } else {
-      content.style.maxHeight = content.scrollHeight + "px";
-    } 
+
+      panel.style.display = "block";
+
+    }
+
   });
+
 }
+
 </script>
 
-</div>
+
+
 </body>
+
 </html>
